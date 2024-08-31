@@ -1,0 +1,39 @@
+23:27:02.326 [main] INFO  e.h.S.SpringBootJpaSecurityHwApplication - Starting SpringBootJpaSecurityHwApplication using Java 21.0.4 with PID 10842 (/Users/ios/BobaOwnFoldel/myJava/SpringBootJpaSecurityHW/target/classes started by ios in /Users/ios/BobaOwnFoldel/myJava/SpringBootJpaSecurityHW)
+23:27:02.328 [main] INFO  e.h.S.SpringBootJpaSecurityHwApplication - No active profile set, falling back to 1 default profile: "default"
+23:27:03.194 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:27:03.253 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+23:27:03.790 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:27:03.804 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:27:03.804 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+23:27:03.855 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:27:03.856 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1482 ms
+23:27:04.029 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:27:04.097 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+23:27:04.130 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:27:04.468 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:27:04.498 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:27:04.679 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63262071
+23:27:04.681 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:27:04.742 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+23:27:05.430 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: edu.hillel.SpringBootJpaSecurityHW.entity.Order (class must be instantiated by Interceptor)
+23:27:05.648 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:27:05.667 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+23:27:05.667 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "order_product" does not exist, skipping
+23:27:05.668 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+23:27:05.668 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "order_product" does not exist, skipping
+23:27:05.669 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+23:27:05.669 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "order_product" does not exist, skipping
+23:27:05.669 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+23:27:05.669 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "orders" does not exist, skipping
+23:27:05.670 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+23:27:05.670 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "products" does not exist, skipping
+23:27:05.733 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:27:06.087 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:27:06.476 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+23:27:06.486 [main] INFO  e.h.S.SpringBootJpaSecurityHwApplication - Started SpringBootJpaSecurityHwApplication in 5.003 seconds (process running for 6.682)
+23:29:23.025 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:29:23.028 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:29:23.043 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+23:29:50.672 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:29:50.676 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:29:50.679 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
