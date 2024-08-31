@@ -21,7 +21,7 @@ public class SecurityConfiguration {
                 .csrf(CsrfConfigurer::disable)
                 .authorizeHttpRequests(authorize ->
                         authorize
-                                .requestMatchers("/registration").permitAll()
+                                .requestMatchers("/registration", "/ping").permitAll()
                                 .requestMatchers("/orders/add-order", "/orders/delete/**").hasAuthority(ADMIN.name())
                                 .anyRequest().authenticated()
                 )
