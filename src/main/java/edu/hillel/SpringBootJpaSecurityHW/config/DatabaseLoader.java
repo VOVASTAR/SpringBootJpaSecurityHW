@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DatabaseLoader {
     @Bean
-    CommandLineRunner initDatabase(ProductRepositoryJpa productRepositoryJpa) {
+    public CommandLineRunner initDatabase(ProductRepositoryJpa productRepositoryJpa) {
         return args -> {
 //            Faker faker = new Faker();
 //            for (int i = 1; i <= 20; i++) {

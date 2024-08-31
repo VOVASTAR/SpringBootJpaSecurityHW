@@ -18,11 +18,13 @@ public class OrderController {
     private final OrderService orderService;
 
     @GetMapping("/get-all")
+    @ResponseBody
     public List<Order> getAllOrders() {
         return orderService.getAllOrders();
     }
 
     @GetMapping("/{id}")
+    @ResponseBody
     public Order getOrderById(@PathVariable long id) {
         return orderService.getOrderById(id);
     }

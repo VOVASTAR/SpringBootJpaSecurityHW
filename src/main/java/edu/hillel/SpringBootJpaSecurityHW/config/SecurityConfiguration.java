@@ -28,11 +28,13 @@ public class SecurityConfiguration {
                 .formLogin(login -> login
                         .loginPage("/login")
                         .defaultSuccessUrl("/orders/add-order")
-                        .permitAll())
+                        .permitAll()
+                )
                 .logout(logout -> logout
                         .logoutSuccessUrl("/login")
                         .deleteCookies("JSESSIONID")
-                        .permitAll())
+                        .permitAll()
+                )
                 .build();
     }
 
