@@ -4,13 +4,14 @@ package edu.hillel.SpringBootJpaSecurityHW.controller;
 import edu.hillel.SpringBootJpaSecurityHW.entity.Order;
 import edu.hillel.SpringBootJpaSecurityHW.service.OrderService;
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @AllArgsConstructor
 
-@RestController
+@Controller
 @RequestMapping("/orders")
 public class OrderController {
 
@@ -26,8 +27,13 @@ public class OrderController {
         return orderService.getOrderById(id);
     }
 
+    @GetMapping("/add-order")
+    public String getFormForAddOrder() {
+        return "addOrder";
+    }
+
     @PostMapping("/add-order")
-    public void addOrder(@RequestBody List<Long> ids) {
+    public void addOrder(@RequestParam List<Long> ids) {
         orderService.addOrder(ids);
     }
 
