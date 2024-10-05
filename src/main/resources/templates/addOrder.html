@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Order</title>
+</head>
+<body>
+<h1>Add Order</h1>
+<form th:action="@{/orders/add-order}" method="post">
+    <label for="ids">Enter Order IDs (comma-separated):</label><br>
+    <input type="text" id="ids" name="ids" placeholder="1, 2, 3" required><br><br>
+    <button type="submit">Submit Order</button>
+</form>
+</body>
+</html>
